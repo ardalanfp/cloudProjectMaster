@@ -1,4 +1,4 @@
-package main.CloudCourseProject.model;
+package com.microservice.FumElection.model;
 
 import javax.persistence.*;
 import java.util.List;

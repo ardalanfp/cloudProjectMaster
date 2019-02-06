@@ -1,6 +1,6 @@
-package main.CloudCourseProject.repository;
+package com.microservice.FumElection.repository;
 
-import main.CloudCourseProject.model.Election;
+import com.microservice.FumElection.model.Election;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ElectionRepository extends JpaRepository<Election, Integer> {

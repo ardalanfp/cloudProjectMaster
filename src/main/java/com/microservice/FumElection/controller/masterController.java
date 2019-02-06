@@ -1,22 +1,19 @@
-package main.CloudCourseProject.controller;
+package com.microservice.FumElection.controller;
 
-import main.CloudCourseProject.model.Candidate;
-import main.CloudCourseProject.model.Election;
-import main.CloudCourseProject.model.Vote;
-import main.CloudCourseProject.repository.CandidateRepository;
-import main.CloudCourseProject.repository.ElectionRepository;
-import main.CloudCourseProject.repository.VotesRepository;
+import com.microservice.FumElection.model.Election;
+import com.microservice.FumElection.model.Candidate;
+import com.microservice.FumElection.model.Vote;
+import com.microservice.FumElection.repository.CandidateRepository;
+import com.microservice.FumElection.repository.ElectionRepository;
+import com.microservice.FumElection.repository.VotesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.*;
 
 @RestController
@@ -39,7 +36,7 @@ public class masterController {
     private String voteSystemPort;
 
 
-    private boolean isValid(Election e,Candidate c,String voterEmail){
+    private boolean isValid(Election e, Candidate c, String voterEmail){
         System.out.println("isValid function");
         final String uri = "http://"+voteSystemIp+":"+voteSystemPort+"/validate";
         System.out.println(uri);

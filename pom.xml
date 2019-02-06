@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from CloudCourseProject.repository -->
     </parent>
 
-    <groupId>CloudCourseProject</groupId>
+    <groupId>com.microservice.FumElection</groupId>
     <artifactId>master</artifactId>
     <version>1.0-SNAPSHOT</version>
 

@@ -1,7 +1,7 @@
-package main.CloudCourseProject.repository;
+package com.microservice.FumElection.repository;
 
-import main.CloudCourseProject.model.Candidate;
-import main.CloudCourseProject.model.Election;
+import com.microservice.FumElection.model.Candidate;
+import com.microservice.FumElection.model.Election;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
